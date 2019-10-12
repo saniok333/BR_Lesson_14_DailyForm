@@ -11,6 +11,7 @@ body {
   height: 100vh;
   background-image: linear-gradient(29deg, #ff512f 0%, #dd2476 100%);
   display: flex;
+  align-items: center;
 }
 
 #container form {
@@ -76,11 +77,15 @@ body {
 
 #container form #name {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 #container form #name input {
-  flex-basis: 193px;
+  flex-grow: 1;
+}
+
+#container form #name input + input {
+  margin-left: 10px;
 }
 #container form input[type="submit"] {
   height: 50px;
